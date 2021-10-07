@@ -11,6 +11,7 @@ ABaseCharacter::ABaseCharacter()
 	MaxHealth = 100;
 	Health = MaxHealth;
 	isDead = false;
+	RegenerationHealthValue = 2;
 
 }
 

@@ -15,8 +15,13 @@ public:
 	// Sets default values for this actor's properties
 	ABaseWeapon();
 
+	//Socket name for attach melee weapon
 	UPROPERTY(BlueprintReadWrite, EditAnyWhere, Category = Weapon)
-	FName SocketName;
+	FName CatanaAttachSocketName;
+
+	//Socket name for deattach melee weapon
+	UPROPERTY(BlueprintReadWrite, EditAnyWhere, Category = Weapon)
+	FName CatanaDeattachSocketName;
 
 protected:
 	// Called when the game starts or when spawned

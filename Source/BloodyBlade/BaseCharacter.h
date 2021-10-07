@@ -23,9 +23,25 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Character)
 	float Health;
 
+	//RegenHealthValue
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Character)
+	float RegenerationHealthValue;
+
 	//isDead bool
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Character)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Character)
 	bool isDead;
+
+	//CurrentWeapon
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Character)
+	AActor* CurrentWeapon;
+
+	/*UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Character)
+	UClass* AttachedWeapon;
+	*/
+	
+	/*
+	 FUNCTIONS
+	 */
 
 	//Dead check func
 	virtual void CalculateDead();
