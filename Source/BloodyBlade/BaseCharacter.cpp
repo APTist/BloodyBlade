@@ -21,7 +21,7 @@ void ABaseCharacter::CalculateHealth(float Delta)
 	Health += Delta;
 	if(Health > MaxHealth)
 		Health = MaxHealth;
-	CalculateDead();
+
 }
 
 

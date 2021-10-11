@@ -23,6 +23,10 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnyWhere, Category = Weapon)
 	FName CatanaDeattachSocketName;
 
+	//Damage
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Weapon)
+	float Damage;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

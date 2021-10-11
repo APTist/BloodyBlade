@@ -11,6 +11,7 @@ ABaseWeapon::ABaseWeapon()
 
 	CatanaAttachSocketName = "Weapon_R";
 	CatanaDeattachSocketName = "mWeapon_L";
+	Damage = 10.0f;
 
 }
 
